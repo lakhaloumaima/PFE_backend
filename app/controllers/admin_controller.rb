@@ -1,4 +1,7 @@
 class AdminController < ApplicationController
+
+  # ////////////////////////////   users
+
   def index
     @users = User.all
     render json: @users
@@ -24,6 +27,8 @@ class AdminController < ApplicationController
     @user.destroy
   end
 
+
+
   private
 
 
@@ -34,4 +39,10 @@ class AdminController < ApplicationController
   def set_post
     @user = User.find(params[:id])
   end
+
+ 
+
+
+
+
 end
