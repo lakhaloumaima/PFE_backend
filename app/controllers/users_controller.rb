@@ -1,4 +1,4 @@
-class AdminController < ApplicationController
+class UsersController < ApplicationController
 
   # ////////////////////////////   users
 
