@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_03_11_103513) do
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_03_12_132531) do
+>>>>>>> mvc
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,6 +25,27 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_11_103513) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  create_table "educations", force: :cascade do |t|
+    t.string "dateDebut"
+    t.string "dateFin"
+    t.string "ecole"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "experiences", force: :cascade do |t|
+    t.string "dateDebut"
+    t.string "dateFin"
+    t.string "jobType"
+    t.string "description"
+    t.string "entreprise"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> mvc
   create_table "missions", force: :cascade do |t|
     t.string "title"
     t.string "description"
@@ -34,6 +59,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_11_103513) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  create_table "reviews", force: :cascade do |t|
+    t.string "commentClient"
+    t.string "commentFreelancer"
+    t.integer "id_mission"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> mvc
   create_table "users", force: :cascade do |t|
     t.string "lastname"
     t.string "firstname"

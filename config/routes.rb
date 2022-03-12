@@ -11,5 +11,9 @@ Rails.application.routes.draw do
 
   resources :missions, only: [:create, :index, :show , :update, :destroy]
 
+  resources :categories, only: [:create, :index, :show , :update, :destroy]
+
+  resources :missions, only: [:create, :index, :show , :update, :destroy]
+  
   root to: "static#home"
 end
